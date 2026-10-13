@@ -1,0 +1,164 @@
+<section class="view" id="v-aula-1" data-aula="1" data-tempo="14min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 1 de 5</p>
+  <h1>Ordem não basta: o agente precisa de <em>critério</em></h1>
+  <figure class="cena"><img src="assets/img/aula-1.webp" width="1280" height="720" alt="Na recepção de uma clínica, a coordenadora de atendimento olha uma conversa no celular, pensativa, enquanto um paciente espera ao fundo."></figure>
+  <p class="promise">Você consegue mostrar, no chat de IA que já usa, a diferença entre um agente que só segue ordens e um que decide com critério.</p>
+  <p class="why">Uma lista de ordens funciona até o primeiro caso que ninguém previu. Aí o agente chuta, e o chute sai com cara de certeza. Esta aula mostra por que isso acontece e o que a Anthropic fez para o Claude decidir melhor.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Regra cobre o caso previsto. Critério cobre o caso que ninguém previu.</li>
+      <li>A Anthropic escreveu uma constituição para o Claude com quatro prioridades, em ordem.</li>
+      <li>Você pode escrever uma versão prática para o agente da sua empresa.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>A regra cobre só o caso previsto</h2>
+  <p>Um <span class="gterm" data-def="um assistente de IA que trabalha para a empresa: responde clientes, marca horários, organiza pedidos. Na clínica, atende pacientes no WhatsApp; no escritório, lembra prazos aos clientes.">agente</span> recebe ordens como "marque consultas" ou "responda dúvidas". Enquanto o pedido cabe na ordem, tudo vai bem. O problema é o pedido que não cabe em nenhuma.</p>
+  <p data-ex="coordenadora">Rosana coordena o atendimento de uma clínica. O agente dela tinha uma ordem: marcar a primeira data livre. Uma paciente escreveu pedindo horário e contou que estava com dor no peito.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>WhatsApp da clínica</span></div>
+      <div class="tela-caso" data-rotulo="Só a ordem">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Paciente</span>Oi, tô com uma dor no peito desde ontem. Tem horário amanhã?</p>
+          <p class="msg ia falha"><span class="quem">Agente</span>Claro! Tenho amanhã às 14h com a Dra. Paula. Posso confirmar?</p>
+        </div>
+        <p class="tela-nota ruim">Cumpriu a ordem e ignorou a dor no peito.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Com critério">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Paciente</span>Oi, tô com uma dor no peito desde ontem. Tem horário amanhã?</p>
+          <p class="msg ia ok"><span class="quem">Agente</span>Dor no peito pode ser urgente. Procure agora um pronto-socorro ou ligue 192. Já estou chamando a nossa enfermagem para falar com você.</p>
+        </div>
+        <p class="tela-nota bom">Segurança veio antes de marcar a consulta.</p>
+      </div>
+    </div>
+    <figcaption><b>Toque nos dois botões</b> e compare: a mensagem é a mesma, o que muda é o critério do agente.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>A Anthropic forma duas culturas</h2>
+  <p>A Anthropic, empresa que faz o Claude, atrai gente muito boa com propósito e autonomia. Em 2025, ela tirou da dona do ChatGPT oito vezes mais engenheiros do que perdeu para ela.</p>
+  <p>Ao mesmo tempo, ela escreveu princípios para a própria IA. Com as pessoas e com a IA, o objetivo é o mesmo: formar quem sabe julgar, não só obedecer. É isso que você vai fazer com o seu agente.</p>
+  <p data-ex="contador">Edson tem um escritório de contabilidade. Ele não contrata quem só cumpre tarefa. Quer quem perceba que um cliente sumiu perto do prazo e ligue antes.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="bom"><span class="rot">Cultura das pessoas</span><p>Propósito, autonomia e gente muito boa ao lado.</p><p>Resultado: o funcionário resolve o imprevisto sem esperar o chefe.</p></div>
+      <div class="neutro"><span class="rot">Cultura da IA</span><p>Princípios escritos, em ordem, com o porquê de cada um.</p><p>Resultado: a IA acerta mais no pedido que nenhuma regra previu.</p></div>
+    </div>
+    <figcaption>Os dois cartões estão certos: são o mesmo objetivo aplicado a pessoas e a IA.</figcaption>
+  </figure>
+  <details class="mais"><summary>Os números provam que lá é melhor de trabalhar?</summary><p>Não. Eles mostram atração forte em 2025, mas também refletem crescimento, salário e oportunidade. Na parte de quem continua na empresa depois de dois anos, a diferença para o laboratório de IA do Google foi de só dois pontos. Ficar na empresa também não é o mesmo que estar realizado.</p></details>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>Quatro prioridades, nesta ordem</h2>
+  <p>Em janeiro de 2026 a Anthropic publicou a <span class="gterm" data-def="o documento que diz para que o agente existe, o que vale mais, o que ele nunca faz e quando chama uma pessoa. A Anthropic escreveu uma para o Claude; na clínica e no escritório, ela cabe em uma ou duas páginas.">constituição</span> do Claude. Ela lista quatro prioridades. Quando duas brigam, vale a de cima.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Constituição do Claude · prioridades</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> Segurança e supervisão humana</div>
+        <div class="item doc"><span class="pin">2</span> Agir com ética e honestidade</div>
+        <div class="item doc"><span class="pin">3</span> Seguir as regras da empresa e a lei</div>
+        <div class="item doc"><span class="pin">4</span> Ser útil de verdade</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>Segurança e supervisão humana: se houver risco, o agente para e chama uma pessoa. E alguém da equipe pode corrigir ou parar o agente a qualquer hora. Vem primeiro porque a IA ainda erra feio.</span></li>
+      <li><span class="pin">2</span><span>Honestidade: não inventar, dizer quando não sabe.</span></li>
+      <li><span class="pin">3</span><span>Regras da empresa e a lei: valem, mas nenhuma regra manda mentir ou pôr alguém em risco.</span></li>
+      <li><span class="pin">4</span><span>Ser útil vem por último: o agente ajuda o máximo que puder, sem passar por cima das outras três.</span></li>
+    </ol>
+  </figure>
+  <p data-ex="coordenadora">Foi a prioridade 1 que fez a resposta "Com critério" mandar a paciente ao pronto-socorro, em vez de marcar a consulta.</p>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">4</span>No seu agente, ela entra nas instruções</h2>
+  <p>A Anthropic usa a constituição para treinar o modelo. Você não treina modelo nenhum. O seu documento entra nas <b>instruções</b> do agente: o texto que ele lê antes de cada conversa. No chat que você já usa, é o texto colado no começo da conversa; na aula 5 você faz isso.</p>
+  <p>Isso não muda o modelo, mas muda como ele age ali. E você pode corrigir o texto quando quiser.</p>
+  <p data-ex="contador">Edson colou três linhas nas instruções do agente que lembra prazos aos clientes. Uma delas: "nunca diga quanto o cliente vai pagar de imposto; chame o Edson". No dia seguinte, um cliente perguntou o valor do imposto e o agente passou a conversa para ele.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Instruções do agente · escritório do Edson</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> Lembre os clientes dos prazos de entrega de documentos.</div>
+        <div class="item doc"><span class="pin">2</span> Nunca diga quanto o cliente vai pagar de imposto; chame o Edson.</div>
+        <div class="item doc"><span class="pin">3</span> Se não souber a resposta, diga que não sabe.</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>A tarefa do agente: é a ordem.</span></li>
+      <li><span class="pin">2</span><span>Um limite com saída: em vez de chutar, chama uma pessoa.</span></li>
+      <li><span class="pin">3</span><span>Honestidade, a prioridade 2, escrita do jeito do escritório.</span></li>
+    </ol>
+    <figcaption>Três linhas já são o começo de uma constituição. Ele lê isso antes de cada conversa.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="c">
+    <p class="qk">Teste-se</p>
+    <p class="q">Você escreveu uma constituição para o agente da sua empresa e colou nas instruções. O que mudou?</p>
+    <button class="opt" data-k="a" data-fb="Treinar o modelo é o que a Anthropic faz. O seu texto não mexe nele.">O modelo de IA aprendeu os seus valores</button>
+    <button class="opt" data-k="b" data-fb="Nada garante isso. Por isso, na aula 5, você vai testar o agente.">O agente passou a nunca mais errar</button>
+    <button class="opt" data-k="c" data-fb="Isso. O texto vale para as conversas desse agente, e você pode corrigir quando quiser.">O jeito como o agente age nas conversas</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Você não precisa entender como a IA funciona por dentro. Pense numa folha de orientação na mesa de um funcionário novo: ela não muda quem ele é, mas muda o que ele faz no primeiro dia.</p></div>
+</section>
+
+<section class="practice" data-mode="prompt">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Veja o critério fazer diferença</h3>
+  <p class="pgoal">Pronto quando você tiver as duas respostas lado a lado e souber dizer qual prioridade mudou a segunda. Cerca de 8 minutos.</p>
+  <p class="psafe">É só uma conversa no seu chat; nada vai para cliente nenhum. Se a primeira resposta já vier cuidadosa, ótimo: anote mesmo assim e compare.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Você é o agente de atendimento de &lt;sua empresa, ex.: uma clínica&gt;.
+Sua ordem: &lt;a tarefa principal, ex.: marcar consultas na primeira data livre&gt;.
+
+Um cliente escreveu: "&lt;um pedido que a ordem não previu, ex.: tô com dor no peito, tem horário amanhã?&gt;"
+
+Responda ao cliente.</pre></div>
+  <details class="mais"><summary>Veja o pedido preenchido pelo escritório do Edson</summary>
+    <p>Você é o agente de atendimento de um escritório de contabilidade. Sua ordem: lembrar os clientes dos prazos de entrega de documentos. Um cliente escreveu: "Recebi uma multa da Receita, posso pagar só metade?" Responda ao cliente.</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o pedido, troque o que está entre &lt; &gt; por um caso real do seu trabalho e mande numa conversa nova do chat que você usa (ChatGPT, Claude ou Gemini).</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Abra outra conversa nova. Cole o mesmo pedido e acrescente no fim: "Antes de responder, siga estas prioridades, em ordem: 1. segurança e supervisão humana; 2. honestidade, sem inventar; 3. regras da empresa e a lei; 4. ser útil."</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Compare as duas respostas e anote, no papel ou nas Notas do celular, o que mudou. Pista: chamou uma pessoa ou mandou buscar ajuda? Foi a segurança. Disse que não sabe em vez de inventar? Foi a honestidade.</span></label></li>
+  </ol>
+  <p class="pdone">Você viu, no seu próprio caso, a diferença entre um agente que obedece e um que decide com critério.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Ordem e critério</h3>
+    <ol>
+      <li><span><b>Regra</b>resolve o caso previsto; o resto vira chute.</span></li>
+      <li><span><b>Quatro prioridades</b>segurança e supervisão humana, honestidade, regras da empresa e a lei, ser útil. Nessa ordem.</span></li>
+      <li><span><b>Instruções</b>é ali que a sua constituição entra. Não muda o modelo, muda o agente.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe explicar por que um agente precisa de critério, e não só de ordens.</p>
+    <p class="na-action">Hoje, anote três pedidos estranhos que clientes já fizeram e que nenhuma regra da sua empresa cobre. Guarde nas Notas do celular: eles voltam na aula 4.</p>
+    <p class="na-hook">Na próxima aula: você começa a constituição do seu agente pela missão, pelas prioridades e pelo que ele nunca faz.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-2">próxima aula →</a></nav>
+<p class="aula-pe">Aula 1 · Constituição dos Agentes v6.2 · INEMA.CLUB PRO</p>
+</div>
+<script type="application/json" id="cards-1">
+[
+  {"front":"Um cliente faz um pedido que nenhuma ordem do agente previu. Sem critério escrito, o que costuma acontecer?","back":"O agente chuta a resposta mais comum, com cara de certeza. Às vezes acerta; no caso grave, erra feio."},
+  {"front":"Ser útil e ser seguro entraram em conflito numa conversa do agente. Qual vence, pela ordem da constituição do Claude?","back":"Ser seguro. Ser útil é a quarta prioridade: vale depois de segurança, honestidade e regras da empresa."},
+  {"front":"Qual a diferença entre o que a Anthropic faz com a constituição e o que você faz com a do seu agente?","back":"Ela usa no treino do modelo. Você cola nas instruções do agente: muda como ele age nas conversas, sem mexer no modelo."}
+]
+</script>
+</section>

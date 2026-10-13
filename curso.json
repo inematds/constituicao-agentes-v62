@@ -1,0 +1,13 @@
+{
+  "id": "constituicaoagentesv62",
+  "titulo": "Constituição dos Agentes v6.2 — Escreva as regras de julgamento do seu agente",
+  "titulo_html": "Um agente que <em>sabe decidir</em>",
+  "curso_curto": "Constituição dos Agentes v6.2",
+  "kicker": "Constituição dos Agentes v6.2 · 5 aulas de uns 15 minutos",
+  "lead": "Parte do que a Anthropic fez com o Claude e chega ao agente da sua empresa. Em cada aula você escreve uma peça da constituição dele, no chat de IA que já usa, e termina com o documento testado.",
+  "imagem_trilha": "assets/img/trilha.webp",
+  "alt_trilha": "Uma coordenadora de atendimento de clínica e o dono de um escritório de contabilidade revisam juntos uma folha impressa com anotações à caneta.",
+  "rodape": "Constituição dos Agentes v6.2 · INEMA.CLUB PRO · <a href=\"landing.html\">sobre o curso</a>",
+  "landing": "landing.html",
+  "glossario": true
+}

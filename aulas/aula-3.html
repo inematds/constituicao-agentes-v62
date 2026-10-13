@@ -1,0 +1,168 @@
+<section class="view" id="v-aula-3" data-aula="3" data-tempo="15min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 3 de 5</p>
+  <h1>Quanto o agente faz sozinho e quando <em>chama uma pessoa</em></h1>
+  <figure class="cena"><img src="assets/img/aula-3.webp" width="1280" height="720" alt="A coordenadora de uma clínica e uma recepcionista jovem diante de um quadro branco com uma tabela de quatro linhas; a coordenadora aponta para uma linha."></figure>
+  <p class="promise">Você acrescenta à sua constituição uma tabela com 4 a 6 ações reais do seu negócio e o nível de autonomia de cada uma. Também escreve quando o agente chama uma pessoa, quem e em quanto tempo.</p>
+  <p class="why">Nem tudo que o agente sabe fazer ele deve fazer sozinho. Responder o endereço não tem risco. Perdoar uma taxa mexe no caixa. Esta aula ajuda você a decidir, ação por ação, até onde ele vai.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Cada ação ganha um nível: 0 · não toca: passa para uma pessoa, 1 · propõe e espera, 2 · faz e avisa, 3 · faz sozinho.</li>
+      <li>O nível depende de duas perguntas: dá para desfazer o erro? Quanto ele custa?</li>
+      <li>Quatro situações fazem o agente parar e passar a conversa, com o histórico.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>Quatro níveis, do "não toca" ao "faz sozinho"</h2>
+  <p>O <span class="gterm" data-def="um assistente de IA que trabalha para a empresa: responde clientes, marca horários, organiza pedidos. Na clínica, atende pacientes no WhatsApp; no escritório, lembra prazos aos clientes.">agente</span> não recebe uma permissão geral. Cada ação tem o seu <span class="gterm" data-def="quanto o agente pode fazer sozinho numa ação: 0 não toca (passa para uma pessoa), 1 propõe e espera, 2 faz e avisa, 3 faz sozinho.">nível de autonomia</span>, escrito na <span class="gterm" data-def="o documento que diz para que o agente existe, o que vale mais, o que ele nunca faz e quando chama uma pessoa. A Anthropic escreveu uma para o Claude; na clínica e no escritório, ela cabe em uma ou duas páginas.">constituição</span>. Ela fica no documento Constituição do agente, que você criou na aula 2.</p>
+  <p data-ex="coordenadora">Rosana montou a tabela no quadro branco com a recepção. Responder o endereço ficou no 3. Isentar a taxa de cancelamento ficou no 1, porque o limite dela diz: nunca isentar por conta própria.</p>
+  <p>No WhatsApp, "propõe e espera" fica assim: o agente responde ao paciente que vai confirmar e manda o pedido para a Rosana decidir.</p>
+  <p>Na dúvida entre 0 e 1, use esta regra: pedido de exceção ou de dinheiro, que alguém da equipe decide, é 1. Pergunta de especialista, como saúde, imposto ou lei, em que o agente nem opina, é 0.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Constituição do agente · clínica · autonomia</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">0</span> Não toca: passa para uma pessoa · qualquer pergunta clínica vai para a enfermagem</div>
+        <div class="item doc"><span class="pin">1</span> Propõe e espera · isentar taxa de cancelamento: a Rosana decide</div>
+        <div class="item doc"><span class="pin">2</span> Faz e avisa · marcar e remarcar consulta: avisa a recepção</div>
+        <div class="item doc"><span class="pin">3</span> Faz sozinho · responder endereço, horário e convênios</div>
+      </div>
+    </div>
+    <figcaption>Do 0 ao 3, o agente ganha liberdade. Quanto mais o erro pesa, menor o número e mais perto fica uma pessoa.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>Como decidir o nível de cada ação</h2>
+  <p>Faça duas perguntas para cada ação. Se der errado, dá para desfazer? E quanto custa o erro, em dinheiro, saúde ou confiança do cliente? Se as duas respostas apontarem níveis diferentes, vale a mais cuidadosa.</p>
+  <p data-ex="contador">Edson testou isso no escritório. Mandar lembrete de prazo errado se corrige com outra mensagem: nível 3. Prometer desconto nos honorários não tem volta fácil e mexe no caixa: nível 1, o Edson decide.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="bom"><span class="rot">Desfaz fácil e custa pouco</span><p>Lembrar o prazo de entrega de documentos: 3 · faz sozinho.</p><p>Dizer quais documentos ainda faltam: 3 · faz sozinho.</p></div>
+      <div class="neutro"><span class="rot">Não volta ou custa caro</span><p>Dar desconto nos honorários: 1 · propõe e espera.</p><p>Dar orientação fiscal personalizada: 0 · não toca: passa para uma pessoa.</p></div>
+    </div>
+    <figcaption>Na dúvida entre dois níveis, comece pelo menor. Subir depois é fácil; consertar um estrago, não.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="b">
+    <p class="qk">Teste-se</p>
+    <p class="q">Um paciente pede desconto na consulta. O limite da clínica diz: nunca dar desconto por conta própria. Que nível essa ação recebe?</p>
+    <button class="opt" data-k="a" data-fb="Fazer sozinho bate de frente com o limite, e desconto dado não volta.">3 · faz sozinho</button>
+    <button class="opt" data-k="b" data-fb="Isso. O agente diz que vai confirmar e manda o pedido para a Rosana decidir.">1 · propõe e espera</button>
+    <button class="opt" data-k="c" data-fb="Avisar depois não desfaz o desconto que o paciente já recebeu.">2 · faz e avisa</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>Quatro situações para chamar uma pessoa</h2>
+  <p>Além da tabela, a constituição diz quando o agente deve <span class="gterm" data-def="o agente para e passa a conversa para alguém da equipe, com o histórico, em vez de decidir sozinho.">chamar uma pessoa</span>, qualquer que seja a ação.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Constituição do agente · quando chamar uma pessoa</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> O cliente mostra sofrimento, ameaça ou risco à saúde ou à segurança.</div>
+        <div class="item doc"><span class="pin">2</span> O pedido está fora da missão ou bate num limite.</div>
+        <div class="item doc"><span class="pin">3</span> Falta informação para decidir e o erro custaria caro.</div>
+        <div class="item doc"><span class="pin">4</span> O agente errou duas vezes na mesma tarefa.</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>Prioridade 1, segurança e supervisão humana: se houver risco, o agente para e chama uma pessoa.</span></li>
+      <li><span class="pin">2</span><span>A missão e os limites são os que você escreveu na aula 2.</span></li>
+      <li><span class="pin">3</span><span>Na dúvida que custa caro, perguntar sai mais barato que adivinhar.</span></li>
+      <li><span class="pin">4</span><span>Percebe-se quando o cliente repete o pedido ou reclama da resposta.</span></li>
+    </ol>
+  </figure>
+  <p data-ex="contador">No escritório do Edson, uma cliente mandou foto de um documento e o agente leu a data errada duas vezes. A cliente corrigiu duas vezes. Pela regra 4, o agente parou e chamou o Edson.</p>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">4</span>Passar a conversa sem o cliente repetir tudo</h2>
+  <p>Chamar uma pessoa tem três partes: para quem vai, em quanto tempo e com o histórico. Sem isso, o cliente conta a história de novo e acha que ninguém leu. O prazo, combine com quem vai receber; se não souber, use o que você já cumpre hoje no WhatsApp.</p>
+  <p data-ex="coordenadora">Na clínica, uma paciente perguntou se podia tomar o remédio antes do exame. É pergunta clínica, nível 0. O agente passou para a enfermagem com um resumo.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>WhatsApp da clínica</span></div>
+      <div class="tela-caso" data-rotulo="Passou mal">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Paciente</span>Posso tomar meu remédio antes do exame de amanhã?</p>
+          <p class="msg ia falha"><span class="quem">Agente</span>Não sei responder. Ligue para a clínica.</p>
+        </div>
+        <p class="tela-nota ruim">Largou a paciente: sem dizer quem atende nem quando.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Passou bem">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Paciente</span>Posso tomar meu remédio antes do exame de amanhã?</p>
+          <p class="msg ia ok"><span class="quem">Agente</span>Essa pergunta precisa da nossa enfermagem. Já passei sua mensagem para ela, e alguém responde aqui em até 10 minutos no horário comercial.</p>
+        </div>
+        <p class="tela-nota bom">Quem, em quanto tempo e com o histórico: a enfermagem recebe a conversa inteira e um resumo da pergunta.</p>
+      </div>
+    </div>
+    <figcaption><b>Toque nos dois botões</b> e compare: nos dois o agente não responde, mas só um passa a conversa direito.</figcaption>
+  </figure>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Você não precisa acertar os níveis de primeira. Pense num funcionário novo: no primeiro mês ele pergunta mais; depois você solta. Na aula 5 você testa e ajusta.</p></div>
+</section>
+
+<section class="practice" data-mode="prompt">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Monte a tabela e as regras do seu agente</h3>
+  <p class="pgoal">Pronto quando o documento Constituição do agente tiver a tabela com 4 a 6 ações e as regras de chamar uma pessoa, com quem e em quanto tempo. Cerca de 10 minutos.</p>
+  <p class="psafe">É só uma conversa no seu chat de IA; nada vai para cliente nenhum. O chat sugere, você decide: troque qualquer nível que não combine com o seu negócio.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Sou &lt;sua função&gt; em &lt;sua empresa&gt;. O agente vai &lt;a missão dele, em uma frase&gt;.
+
+Meus limites: &lt;cole os limites que você escreveu na aula 2&gt;
+
+Estas são ações que ele pode fazer:
+&lt;liste de 4 a 6 ações reais, uma por linha&gt;
+
+Escreva como lista, uma ação por linha, assim: Ação — nível · palavra.
+Use só estes níveis: 0 · não toca: passa para uma pessoa, 1 · propõe e espera, 2 · faz e avisa, 3 · faz sozinho.
+Para cada ação, diga em uma frase: o erro dá para desfazer? Quanto custaria?
+Respeite todo "nunca": o que for "por conta própria" fica no nível 1; o absoluto fica no 0.
+Não invente ações que eu não listei.</pre></div>
+  <details class="mais"><summary>Não fez a aula 2? Comece pelo molde abaixo</summary>
+    <p>Abra as Notas do celular ou um documento no computador e crie o documento Constituição do agente. Escreva: "Missão: o agente existe para &lt;tarefa principal&gt;." Embaixo: "Nunca faz: &lt;uma coisa que ele nunca deve fazer&gt;." Depois siga a prática daqui.</p>
+  </details>
+  <details class="mais"><summary>Veja a tabela do escritório do Edson</summary>
+    <p>Lembrar prazo de entrega de documentos — 3 · faz sozinho.<br>Dizer quais documentos faltam — 3 · faz sozinho.<br>Mudar a data combinada de entrega — 1 · propõe e espera (o Edson confirma).<br>Dar desconto nos honorários — 1 · propõe e espera.<br>Dar orientação fiscal personalizada — 0 · não toca: passa para uma pessoa.</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o pedido, troque o que está entre &lt; &gt; pelas ações do seu negócio e mande numa conversa nova.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Confira cada nível com as duas perguntas da aula, ajuste o que precisar e cole a tabela no documento Constituição do agente.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Embaixo da tabela, copie as quatro situações de chamar uma pessoa e complete: "Chamar quem: &lt;nome ou setor&gt;. Em quanto tempo: &lt;prazo&gt;." Combine o prazo com essa pessoa; se não souber, use o que você já cumpre hoje.</span></label></li>
+  </ol>
+  <p class="pdone">Sua constituição agora diz até onde o agente vai sozinho e para quem ele passa a conversa quando não deve ir.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Autonomia e chamar uma pessoa</h3>
+    <ol>
+      <li><span><b>Níveis</b>0 · não toca: passa para uma pessoa, 1 · propõe e espera, 2 · faz e avisa, 3 · faz sozinho.</span></li>
+      <li><span><b>Duas perguntas</b>dá para desfazer? Quanto custa o erro? Se divergirem, vale a resposta mais cuidadosa.</span></li>
+      <li><span><b>Chamar uma pessoa</b>risco, fora da missão ou limite, falta informação cara, dois erros. Sempre com quem, prazo e histórico.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Seu agente já tem limites de ação claros e sabe a quem pedir ajuda.</p>
+    <p class="na-action">Hoje, mostre a tabela para a pessoa que vai receber as conversas e combine com ela o prazo de resposta.</p>
+    <p class="na-hook">Na próxima aula: você escreve os casos difíceis com o porquê, para o agente julgar o que a tabela não cobre.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-4">próxima aula →</a></nav>
+<p class="aula-pe">Aula 3 · Constituição dos Agentes v6.2 · INEMA.CLUB PRO</p>
+</div>
+<script type="application/json" id="cards-3">
+[
+  {"front":"Avisar o cliente de que o prazo de entrega dos documentos chega na sexta: um erro se corrige com outra mensagem. Que nível você daria?","back":"Nível 3, faz sozinho. Dá para desfazer e custa pouco; o agente registra o aviso enviado."},
+  {"front":"O cliente repete o mesmo pedido pela segunda vez, reclamando da resposta. O que o agente deve fazer?","back":"Parar e passar a conversa para alguém da equipe, com o histórico. Tentar a terceira vez só irrita o cliente."},
+  {"front":"O agente avisou o cliente que não sabia responder e mandou ligar. O que faltou nessa passagem?","back":"Dizer quem vai atender, em quanto tempo, e mandar o histórico para essa pessoa, para o cliente não repetir tudo."}
+]
+</script>
+</section>
