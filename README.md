@@ -15,6 +15,12 @@ uma pessoa, casos difíceis com o porquê — e testá-la no chat de IA que voc�
 4. Casos difíceis com o porquê
 5. Testar e revisar em ciclo
 
+## Mais no INEMA.CLUB
+
+- [Ficha do curso](https://www.inema.club/cursos/322-constituicao-dos-agentes-v6-2-escreva-as-regras-de-julgamento-do-seu-agente/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
+
 ---
 
 [INEMA.CLUB](https://inema.club) · conteúdo aberto e gratuito.
